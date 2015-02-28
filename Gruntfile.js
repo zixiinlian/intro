@@ -2,6 +2,7 @@ module.exports = function(grunt) {
 	'use strict';
 	var pkg = grunt.file.readJSON('package.json');
 	var cfg = {
+		base: '',
         src: 'src/',
         dist: 'build/',
         host: '127.0.0.1',
@@ -77,7 +78,7 @@ module.exports = function(grunt) {
 			server: {
 				options: {
 					open: true,
-					base: cfg.src
+					base: cfg.base
 				}
 			}
 		},

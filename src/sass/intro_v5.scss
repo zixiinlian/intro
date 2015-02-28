@@ -1,1 +1,20 @@
 @import "icon";
+
+.class-header{
+	padding: 20px;
+	background: url(http://i3.c.hjfile.cn/lesson/intro/201501/284bf67a-7369-4736-8c47-9931d0eddb3d.png) no-repeat center;
+	-webkit-filter: blur(5px);
+	.class-info{
+		width:1200px;
+		margin: 0 auto;
+		padding: 15px 20px;	
+		background: #fff;
+	}
+	.class-title{
+		font-family:'microsoft yahei';
+		font-size: 24px;
+	}
+	.class-desc{
+		color: #999;
+	}
+}

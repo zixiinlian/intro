@@ -2,13 +2,19 @@
 
 .class-header{
 	padding: 20px;
-	background: url(http://i3.c.hjfile.cn/lesson/intro/201501/284bf67a-7369-4736-8c47-9931d0eddb3d.png) no-repeat center;
-	-webkit-filter: blur(5px);
+	position: relative;
 	.class-info{
 		width:1200px;
 		margin: 0 auto;
 		padding: 15px 20px;	
 		background: #fff;
+	}
+	.header-bg{
+		background: url(http://i3.c.hjfile.cn/lesson/intro/201501/284bf67a-7369-4736-8c47-9931d0eddb3d.png) no-repeat center;
+		-webkit-filter: blur(5px);
+		position: absolute;
+		width: 100%;
+		height: 100%;
 	}
 	.class-title{
 		font-family:'microsoft yahei';
@@ -16,5 +22,14 @@
 	}
 	.class-desc{
 		color: #999;
+	}
+	.class-info-l{
+		width:50%;
+	}
+	.class-info-r{
+		width: 50%;
+		.class-price{
+			border-bottom:1px solid #fafafa;
+		}
 	}
 }

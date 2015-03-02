@@ -123,9 +123,9 @@ module.exports = function (grunt) {
 			},
 			livereload: {
 				options: {
-					livereload: '<%=connect.options.livereload%>' //监听前面声明的端口  35729
+					livereload: '<%=connect.options.livereload%>' //监听前面声明的端� 35729
 				},
-				files: [ //任何文件的改变就会实时刷新网页
+				files: [ //任何文件的改变就会实时刷新网�
 					'<%= cfg.src %>**'
 				]
 			}
@@ -135,6 +135,6 @@ module.exports = function (grunt) {
 	require('load-grunt-tasks')(grunt);
 
 	grunt.registerTask('test', ['jshint', 'qunit']);
-	grunt.registerTask('dev', ['compass', 'connect:server', 'watch']);
+	grunt.registerTask('dev', ['connect:server', 'watch']);
 	grunt.registerTask('default', ['watch', 'uglify']);
 };

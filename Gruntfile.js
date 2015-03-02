@@ -1,4 +1,4 @@
-module.exports = function (grunt) {
+﻿module.exports = function (grunt) {
 	'use strict';
 	var pkg = grunt.file.readJSON('package.json');
 	var cfg = {
@@ -123,9 +123,9 @@ module.exports = function (grunt) {
 			},
 			livereload: {
 				options: {
-					livereload: '<%=connect.options.livereload%>' //监听前面声明的端� 35729
+					livereload: '<%=connect.options.livereload%>' //鐩戝惉鍓嶉潰澹版槑鐨勭鍙 35729
 				},
-				files: [ //任何文件的改变就会实时刷新网�
+				files: [ //浠讳綍鏂囦欢鐨勬敼鍙樺氨浼氬疄鏃跺埛鏂扮綉椤
 					'<%= cfg.src %>**'
 				]
 			}

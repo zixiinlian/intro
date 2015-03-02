@@ -1,13 +1,14 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
 	'use strict';
 	var pkg = grunt.file.readJSON('package.json');
 	var cfg = {
-        src: 'src/',
-        dist: 'build/',
-        host: '127.0.0.1',
-        port: 8000,
-        livereload: 35729
-    };
+		base: '',
+		src: 'src/',
+		dist: 'build/',
+		host: '127.0.0.1',
+		port: 8000,
+		livereload: 35729
+	};
 
 	grunt.initConfig({
 		pkg: pkg,
@@ -77,7 +78,7 @@ module.exports = function(grunt) {
 			server: {
 				options: {
 					open: true,
-					base: cfg.src
+					base: cfg.base
 				}
 			}
 		},
@@ -86,16 +87,16 @@ module.exports = function(grunt) {
 			dist: {
 				options: {
 					config: 'config.rb'
-					// sassDir: '<%= cfg.src %>sass/',
-					// cssDir: '<%= cfg.dist %>css/',
-					// imagesDir: '<%= cfg.src %>images/',
-					// outputStyle: 'expanded',
-					// relativeAssets: true,
-					// boring: false,
-					// quiet: false,
-					// debugInfo: false,
-					// noLineComments: true,
-					// trace: true
+						// sassDir: '<%= cfg.src %>sass/',
+						// cssDir: '<%= cfg.dist %>css/',
+						// imagesDir: '<%= cfg.src %>images/',
+						// outputStyle: 'expanded',
+						// relativeAssets: true,
+						// boring: false,
+						// quiet: false,
+						// debugInfo: false,
+						// noLineComments: true,
+						// trace: true
 				}
 			},
 			server: {
@@ -110,11 +111,11 @@ module.exports = function(grunt) {
 				livereload: true
 			},
 			css: {
-				files: '**/*.{scss,sass}',
+				files: './**/*.{scss,sass}',
 				tasks: ['compass:dist']
 			},
 			scripts: {
-				files: ['**/*.js'],
+				files: ['./**/*.js'],
 				tasks: ['jshint'],
 				options: {
 					spawn: false,
@@ -134,6 +135,6 @@ module.exports = function(grunt) {
 	require('load-grunt-tasks')(grunt);
 
 	grunt.registerTask('test', ['jshint', 'qunit']);
-	grunt.registerTask('dev', ['connect:server', 'watch']);
+	grunt.registerTask('dev', ['compass', 'connect:server', 'watch']);
 	grunt.registerTask('default', ['watch', 'uglify']);
 };

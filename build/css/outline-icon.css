@@ -1,0 +1,20 @@
+.icon-sprite, .icon-arrowdown, .icon-arrowup {
+  background-image: url('/src/images/icon-se2bdea9f37.png');
+  background-repeat: no-repeat;
+}
+
+.icon-arrowdown {
+  width: 15px;
+  height: 12px;
+  background-position: 0 0;
+  margin-right: 10px;
+  margin-top: 19px;
+}
+
+.icon-arrowup {
+  width: 15px;
+  height: 12px;
+  background-position: 0 -12px;
+  margin-right: 10px;
+  margin-top: 19px;
+}

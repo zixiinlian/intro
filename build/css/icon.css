@@ -1,9 +1,10 @@
 .icon-sprite, .icon-clock {
-  background: url('/src/images/icon-s804a4c21ba.png') no-repeat;
+  background-image: url('/src/images/icon-se2bdea9f37.png');
+  background-repeat: no-repeat;
 }
 
 .icon-clock {
   width: 25px;
   height: 25px;
-  background-position: 0 -50px;
+  background-position: 0 -49px;
 }

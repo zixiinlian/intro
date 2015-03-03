@@ -18,9 +18,12 @@ $(function () {
             });
         }
     };
+
     function changePage(tabIndex) {
         $('.page1,.page2,.page3').hide();
-        $('.page'+tabIndex).show();
+        $('.page' + tabIndex).show();
+        $('.tab1,.tab2,.tab3').removeClass("active");
+        $('.tab' + tabIndex).addClass("active");
     }
 
     var myTab = new Tab();

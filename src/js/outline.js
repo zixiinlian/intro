@@ -10,16 +10,19 @@ $(function () {
         },
         initEvent: function () {
             var that = this;
-            $('.dagang-list .item').on({
+            $('.outline-list .item').on({
                 click: function () {
-                    if($(this).siblings(".item-content").css("display")==="block"){
+                    if ($(this).siblings(".item-content").css("display") === "block") {
                         $(this).siblings(".item-content").css({
-                            display:"none"
+                            display: "none"
                         });
-                    }else{
+                        $(this).find(".arrow").addClass("icon-arrowdown").removeClass("icon-arrowup");
+                    }
+                    else {
                         $(this).siblings(".item-content").css({
-                            display:"block"
+                            display: "block"
                         });
+                        $(this).find(".arrow").addClass("icon-arrowup").removeClass("icon-arrowdown");
                     }
                 }
             });

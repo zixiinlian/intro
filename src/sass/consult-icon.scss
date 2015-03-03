@@ -1,0 +1,27 @@
+@import "iconSprite";
+
+.icon-qq{
+    @include iconSprite(qq);
+}
+.icon-consult2{
+    @include iconSprite(consult2);
+}
+.icon-phone{
+    @include iconSprite(phone);
+}
+.icon-qqm{
+    @include iconSprite(qqm);
+}
+.icon-consult2m{
+    @include iconSprite(consult2m);
+}
+.icon-phonem{
+    @include iconSprite(phonem);
+}
+.icon-pull{
+    @include iconSprite(pull);
+    display: block;
+    float: left;
+    margin-top: 16.5px;
+    margin-right: 5px;
+}

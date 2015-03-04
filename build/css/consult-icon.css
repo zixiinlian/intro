@@ -44,5 +44,7 @@
   height: 17px;
   background-position: 0 -296px;
   display: inline-block;
+  *display: inline;
+  zoom: 1;
   vertical-align: middle;
 }

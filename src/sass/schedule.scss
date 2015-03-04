@@ -21,7 +21,7 @@ html {
     width: 90%;
     margin: 0 auto;
     font-family: "Microsoft Yahei";
-    font-size: 0.8rem;
+    font-size: 16px;
 }
 .online {
     width: 8%;
@@ -55,6 +55,7 @@ html {
         width: 25px;
         height: 25px;
         border-radius: 50%;
+        behavior: url(/src/pie/PIE.htc);
         display: inline-block;
         zoom:1;*display:inline;
         border: 2px solid #ccc;
@@ -80,6 +81,7 @@ html {
             vertical-align: 0;
             line-height: 32px;
             border-radius: 18px;
+            behavior: url(/src/pie/PIE.htc);
             color: #fff;
             .unit-title {
                 margin-left: 20px;
@@ -90,6 +92,7 @@ html {
             height: 30px;
             background-color: #fff;
             border-radius: 50%;
+            behavior: url(/src/pie/PIE.htc);
             border: 5px solid #8CD373;
             line-height: 30px;
             color: #8CD373;

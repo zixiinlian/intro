@@ -30,7 +30,7 @@ i {
   width: 90%;
   margin: 0 auto;
   font-family: "Microsoft Yahei";
-  font-size: 0.8rem;
+  font-size: 16px;
 }
 .wrapper .online {
   width: 8%;
@@ -57,9 +57,10 @@ i {
 .wrapper .consult-content .consult-pic .pic-wrapper .icon {
   height: 39px;
   display: inline-block;
-  _zoom: 1;
-  _display: inline;
+  zoom: 1;
+  *display: inline;
   vertical-align: middle;
+  margin-right: 3px;
 }
 .wrapper .consult-content .consult-pic .pic-wrapper .pcPic {
   width: 100%;
@@ -88,11 +89,12 @@ i {
 .wrapper .consult-content .consult-wrapper .cons-title .title-link a {
   border: 1px solid #5fb740;
   border-radius: 3px;
+  behavior: url(/src/pie/PIE.htc);
   padding: 3px 9px;
   color: #5fb740;
   text-decoration: none;
-  margin: 0 0.25rem;
-  font-size: 0.7rem;
+  margin: 0 5px;
+  font-size: 14px;
 }
 .wrapper .consult-content .msg {
   margin-top: 20px;
@@ -100,36 +102,37 @@ i {
 
 .user-qa {
   margin-bottom: 42px;
-  font-size: 0.7rem;
+  font-size: 14px;
 }
 .user-qa .user-q .username {
   width: 104px;
   color: #999;
-  height: 1.8rem;
+  height: 36px;
   position: relative;
 }
 .user-qa .user-q .username .username-word {
   display: inline-block;
-  _zoom: 1;
-  _display: inline;
+  zoom: 1;
+  *display: inline;
   position: absolute;
-  height: 0.8rem;
+  height: 16px;
   top: 50%;
-  margin-top: -0.4rem;
-  margin-left: 0.5rem;
+  margin-top: -8px;
+  margin-left: 10px;
 }
 .user-qa .user-q .username .user-icon {
-  width: 1.8rem;
-  height: 1.8rem;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
+  behavior: url(/src/pie/PIE.htc);
 }
 .user-qa .user-q .user-question {
   color: #494949;
   padding-left: 104px;
-  padding-top: 0.5rem;
+  padding-top: 10px;
 }
 .user-qa .user-q .user-question .often {
-  font-size: 0.6rem;
+  font-size: 12px;
   background: #ff992b;
   color: #fff;
   margin-left: 5px;
@@ -176,16 +179,17 @@ i {
 .page-link a {
   text-decoration: none;
   display: inline-block;
-  _zoom: 1;
-  _display: inline;
-  width: 2rem;
-  height: 2rem;
+  zoom: 1;
+  *display: inline;
+  width: 40px;
+  height: 40px;
   border: 1px solid #efefef;
   color: #494949;
   border-radius: 50%;
-  line-height: 2rem;
+  behavior: url(/src/pie/PIE.htc);
+  line-height: 40px;
   background: #efefef;
-  margin: 0 0.25rem;
+  margin: 0 5px;
 }
 
 .page-link a.active {
@@ -217,12 +221,13 @@ i {
 
 .consult-content .msg .submit {
   text-decoration: none;
-  width: 8rem;
-  height: 2rem;
+  width: 160px;
+  height: 40px;
   background: #74cd55;
   display: block;
   border-radius: 1px;
-  line-height: 2rem;
+  behavior: url(/src/pie/PIE.htc);
+  line-height: 40px;
   text-align: center;
   color: #fff;
   margin: 20px auto;
@@ -264,8 +269,8 @@ i {
 
   .consult-pic .pic-wrapper .iconm {
     display: inline-block;
-    _zoom: 1;
-    _display: inline;
+    zoom: 1;
+    *display: inline;
   }
 
   .consult-wrapper {
@@ -330,7 +335,7 @@ i {
     display: block;
     background: #f0eff4;
     text-align: center;
-    font-size: 0.6rem;
+    font-size: 12px;
     color: #999;
     height: 50px;
     line-height: 50px;

@@ -9,3 +9,8 @@
     margin-right: 10px;
     margin-top: 19px;
 }
+.icon-try {
+    @include iconSprite(try);
+display: inline-block;
+margin-top: 7px;
+}

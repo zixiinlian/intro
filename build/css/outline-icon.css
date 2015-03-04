@@ -1,5 +1,5 @@
-.icon-sprite, .icon-arrowdown, .icon-arrowup {
-  background-image: url('/src/images/icon-se2bdea9f37.png');
+.icon-sprite, .icon-arrowdown, .icon-arrowup, .icon-try {
+  background-image: url('/src/images/icon-sa330ba415c.png');
   background-repeat: no-repeat;
 }
 
@@ -17,4 +17,12 @@
   background-position: 0 -12px;
   margin-right: 10px;
   margin-top: 19px;
+}
+
+.icon-try {
+  width: 20px;
+  height: 16px;
+  background-position: 0 -479px;
+  display: inline-block;
+  margin-top: 7px;
 }

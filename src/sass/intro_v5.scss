@@ -1,8 +1,9 @@
-@import "icon";
+@import "icon","consult","consult-icon";
 
 $gray: #898989;
-$blueHover: #5fb740;
-$blue: #74cd55;
+$greenHover: #5fb740;
+$green: #74cd55;
+$orange: #f60;
 
 // common
 .clearfix:before,.clearfix:after {content:"";display:table;}
@@ -11,18 +12,21 @@ $blue: #74cd55;
 a:link, a:visited, a:active {color:#494949; text-decoration:none; }
 a:hover{color: #f60; }
 .gray {color: $gray; }
-.blue{color: $blue;}
+.green{color: $green;}
+.orange{color: $orange;}
 a.btnGreen{
     display: inline-block;
     padding:2px 10px;
     color: #fff;
-    background: $blue;
+    background: $green;
     line-height: 18px;
     border-radius: 2px;
+    position: relative;
     font-family: 'microsoft yahei';
+    behavior: url(/src/pie/PIE.htc);
 }
 .btnGreen:hover{
-   background: $blueHover;
+   background: $greenHover;
 }
 
 body{
@@ -115,10 +119,10 @@ body{
         border-left: 8px solid #74CD55;
         font-size: 20px;
         font-family: 'microsoft yahei';
-        color: $blue;
+        color: $green;
         padding-left: 10px;
         line-height: 24px;
-        margin-bottom: 30px;
+        margin-bottom:20px;
     }
     .panel-con{
         font-size: 14px;
@@ -163,7 +167,7 @@ body{
         position: absolute;
         height: 22px;
         line-height: 20px;
-        top: -10px;
+        top: -10px; 
         margin-left: -153px;
     }
     .recommond-tbl{
@@ -174,14 +178,62 @@ body{
         }
         thead td{
             background: #f8f8f8;
-            text-align: center;
+        }
+        tbody td{
+            border-bottom: 1px solid #f8f8f8;
         }
     }
 }
 .class-time-panel{
+    background: #f8f8f8;
+    padding: 20px 40px;
+    margin-bottom: 5px;
     .timeline-box{
-        background: url(/src/images/timeLine.png) no-repeat center;
+        background: url(/src/images/timeLine.png) no-repeat center 36px;
         width: 509px;
         position: relative;
+        margin: 0 auto;
+        font-size: 14px;
+        height: 112px;
+        margin-bottom: 20px;
+    }
+    .green{
+        color: $green;
+        font-size: 18px;
+    }
+    .timeline-total{
+        text-align: center;
+        .green{
+            font-size: 30px;
+        }
+    }
+    .timeline-start{
+        position: absolute;
+        left: 19px;
+        top: 63px;
+        line-height: 22px;
+        color: #999;
+        text-align: center;
+    }
+    .timeline-end{
+        position: absolute;
+        right: 33px;
+        top: 63px;
+        color: #999;
+        line-height: 22px;
+        text-align: center;
+    }
+}
+
+.material-panel{
+    .material-covers{
+        float: left;
+        margin-right: 10px;
+        img{
+            margin-right: 15px;
+        }
+    }
+    .material-list{
+        float: left;
     }
 }

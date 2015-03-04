@@ -1,0 +1,16 @@
+@import "iconSprite";
+.icon-arrowdown {
+    @include iconSprite(arrowdown);
+    margin-right: 10px;
+    margin-top: 19px;
+}
+.icon-arrowup {
+    @include iconSprite(arrowup);
+    margin-right: 10px;
+    margin-top: 19px;
+}
+.icon-try {
+    @include iconSprite(try);
+display: inline-block;
+margin-top: 7px;
+}

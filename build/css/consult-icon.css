@@ -1,0 +1,50 @@
+.icon-sprite, .icon-qq, .icon-consult2, .icon-phone, .icon-qqm, .icon-consult2m, .icon-phonem, .icon-pull {
+  background-image: url('/src/images/icon-sa330ba415c.png');
+  background-repeat: no-repeat;
+}
+
+.icon-qq {
+  width: 36px;
+  height: 36px;
+  background-position: 0 -313px;
+}
+
+.icon-consult2 {
+  width: 44px;
+  height: 36px;
+  background-position: 0 -124px;
+}
+
+.icon-phone {
+  width: 35px;
+  height: 36px;
+  background-position: 0 -235px;
+}
+
+.icon-qqm {
+  width: 28px;
+  height: 25px;
+  background-position: 0 -349px;
+}
+
+.icon-consult2m {
+  width: 29px;
+  height: 25px;
+  background-position: 0 -160px;
+}
+
+.icon-phonem {
+  width: 28px;
+  height: 25px;
+  background-position: 0 -271px;
+}
+
+.icon-pull {
+  width: 14px;
+  height: 17px;
+  background-position: 0 -296px;
+  display: block;
+  float: left;
+  margin-top: 16.5px;
+  margin-right: 5px;
+}

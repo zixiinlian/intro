@@ -1,0 +1,165 @@
+html {
+    font-size: 20px;
+}
+.clearfix:before, .clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+.clearfix {
+    zoom: 1;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    font-family: "Microsoft Yahei";
+    font-size: 0.8rem;
+}
+.online {
+    width: 8%;
+    height: 200px;
+    background: green;
+}
+.outline-content {
+    width: 90%;
+}
+.outline-title {
+    margin: 10px 0;
+    color: #5fb740;
+}
+.outline-title .title-header {
+    border-left: 10px solid #74cd55;
+    padding-left: 10px;
+}
+.outline-content .outline-list .item {
+    height: 50px;
+    margin: 5px 0;
+    line-height: 50px;
+    cursor: pointer;
+}
+.outline-content .outline-list .item-content {
+    background: #f9f9f9;
+    padding: 5px;
+    border-top: 1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
+    span {
+        color: #666;
+        margin-left: 15px;
+    }
+    .class-icon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        float: left;
+        margin-top: 0.5px;
+        border: 2px solid #ccc;
+        margin-left: 70px;
+        background: #fff;
+    }
+}
+.outline-content .outline-list .item-content li {
+    margin-top: 5px;
+    padding: 5px;
+    height: 35px;
+    line-height: 35px;
+}
+.outline-list {
+    .item {
+        position: relative;
+        .unit {
+            width: 100px;
+            height: 32px;
+            float: left;
+            background: #c0c0c0;
+            position: absolute;
+            top: 50%;
+            margin-top: -16px;
+            line-height: 32px;
+            border-radius: 18px;
+            color: #fff;
+            .unit-title {
+                margin-left: 20px;
+            }
+        }
+        .circle-num {
+            width: 30px;
+            height: 30px;
+            background-color: #fff;
+            border-radius: 50%;
+            border: 5px solid #8CD373;
+            float: left;
+            line-height: 30px;
+            color: #8CD373;
+            text-align: center;
+            box-shadow: 0 0 0 2px #fff;
+            position: absolute;
+            z-index: 33;
+            margin-left: 78px;
+            top: 50%;
+            margin-top: -20px;
+            font-weight: normal;
+        }
+        .title {
+            padding-left: 133px;
+            color: #606060;
+            font-weight: normal;
+        }
+    }
+}
+@media screen and  (max-width: 768px) {
+    .online, .onlyPC {
+        display: none;
+    }
+    .outline-content {
+        width: 100%;
+        .outline-title {
+            width: 95%;
+            margin: 0 auto;
+        }
+        .unit {
+            display: none;
+        }
+        .class-icon {
+            display: none;
+        }
+        .outline-list {
+            .item {
+                width: 95%;
+                margin: 0 auto;
+                .circle-num {
+                    margin-left: 5px;
+                    border: 1px solid #8CD373;
+                    margin-top: -16px;
+                }
+                .title {
+                    padding-left: 44px;
+                }
+            }
+            .item-content {
+                border: none;
+                padding:0;
+                li {
+                    border-bottom: 1px solid #e7e7e7;
+                    margin-left: 15px;
+                }
+                li:last-of-type {
+                    border-bottom: none;
+                }
+                span {
+                    margin-left: 0;
+                }
+            }
+        }
+    }
+    .wrapper {
+        width: 100%;
+    }
+}

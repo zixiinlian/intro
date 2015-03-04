@@ -22,6 +22,10 @@ html {
   float: right;
 }
 
+i {
+  font-style: normal;
+}
+
 .wrapper {
   width: 90%;
   margin: 0 auto;
@@ -51,15 +55,15 @@ html {
   width: 224px;
 }
 .wrapper .consult-content .consult-pic .pic-wrapper .icon {
-  width: 40px;
-  height: 34px;
-  display: block;
-  margin-right: 6px;
-  margin-top: 9.5px;
-  float: left;
+  height: 39px;
+  display: inline-block;
+  _zoom: 1;
+  _display: inline;
+  vertical-align: middle;
 }
 .wrapper .consult-content .consult-pic .pic-wrapper .pcPic {
   width: 100%;
+  display: block;
 }
 .wrapper .consult-content .consult-pic .pic-wrapper .cons-way {
   width: 100%;
@@ -71,29 +75,31 @@ html {
   color: #fff;
   filter: alpha(opacity=90);
   opacity: 0.9;
+  text-align: center;
 }
 .wrapper .consult-content .consult-wrapper .cons-title {
-  margin: 10px 0;
+  margin: 26px 0 16px;
   color: #5fb740;
 }
 .wrapper .consult-content .consult-wrapper .cons-title .title-header {
-  border-left: 10px solid #74cd55;
+  border-left: 4px solid #74cd55;
   padding-left: 10px;
 }
 .wrapper .consult-content .consult-wrapper .cons-title .title-link a {
   border: 1px solid #5fb740;
   border-radius: 3px;
-  padding: 5px;
+  padding: 3px 9px;
   color: #5fb740;
   text-decoration: none;
   margin: 0 0.25rem;
+  font-size: 0.7rem;
 }
 .wrapper .consult-content .msg {
   margin-top: 20px;
 }
 
 .user-qa {
-  margin-bottom: 50px;
+  margin-bottom: 42px;
   font-size: 0.7rem;
 }
 .user-qa .user-q .username {
@@ -104,6 +110,8 @@ html {
 }
 .user-qa .user-q .username .username-word {
   display: inline-block;
+  _zoom: 1;
+  _display: inline;
   position: absolute;
   height: 0.8rem;
   top: 50%;
@@ -125,7 +133,6 @@ html {
   background: #ff992b;
   color: #fff;
   margin-left: 5px;
-  line-height: 1;
   padding: 1px 3px;
 }
 .user-qa .user-q .user-question .date {
@@ -169,6 +176,8 @@ html {
 .page-link a {
   text-decoration: none;
   display: inline-block;
+  _zoom: 1;
+  _display: inline;
   width: 2rem;
   height: 2rem;
   border: 1px solid #efefef;
@@ -228,6 +237,10 @@ html {
     display: none;
   }
 
+  .wrapper .consult-content .consult-pic .pic-wrapper .onlyPC {
+    display: none;
+  }
+
   .consult-pic .pic-wrapper {
     border-bottom: 1px solid #f0eff4;
     height: 100px;
@@ -251,6 +264,8 @@ html {
 
   .consult-pic .pic-wrapper .iconm {
     display: inline-block;
+    _zoom: 1;
+    _display: inline;
   }
 
   .consult-wrapper {
@@ -298,14 +313,6 @@ html {
     padding: 10px;
   }
 
-  .consult-content .more {
-    display: block;
-    font-size: 0.6rem;
-    color: #999;
-    height: 50px;
-    line-height: 50px;
-  }
-
   .user-qa .hj-answer .arrow {
     top: -10px;
     border-top: 5px solid #fff;
@@ -322,9 +329,15 @@ html {
   .pull-wrap {
     display: block;
     background: #f0eff4;
+    text-align: center;
+    font-size: 0.6rem;
+    color: #999;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 28px;
   }
-  .pull-wrap .pull {
-    width: 91px;
-    margin: 0 auto;
+
+  .cons-title {
+    margin: 15px 0 16px !important;
   }
 }

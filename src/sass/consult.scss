@@ -17,6 +17,9 @@ html {
 .fr {
     float: right;
 }
+i {
+    font-style: normal;
+}
 .wrapper {
     width: 90%;
     margin: 0 auto;
@@ -44,15 +47,14 @@ html {
                     width: 224px;
                 }
                 .icon {
-                    width: 40px;
-                    height: 34px;
-                    display: block;
-                    margin-right: 6px;
-                    margin-top: 9.5px;
-                    float: left;
+                    height: 39px;
+                    display: inline-block;
+                     _zoom:1;_display:inline;
+                    vertical-align: middle;
                 }
                 .pcPic {
                     width: 100%;
+                    display: block;
                 }
                 .cons-way {
                     width: 100%;
@@ -64,27 +66,26 @@ html {
                     color: #fff;
                     filter: alpha(opacity=90);
                     opacity: 0.9;
+                    text-align: center;
                 }
             }
         }
         .consult-wrapper {
             .cons-title {
-               
-                margin: 10px 0;
+                margin: 26px 0 16px;
                 color: #5fb740;
-                
                 .title-header {
-                    
-                    border-left: 10px solid #74cd55;
+                    border-left: 4px solid #74cd55;
                     padding-left: 10px;
                 }
                 .title-link a {
                     border: 1px solid #5fb740;
                     border-radius: 3px;
-                    padding: 5px;
+                    padding: 3px 9px;
                     color: #5fb740;
                     text-decoration: none;
                     margin: 0 0.25rem;
+                    font-size: 0.7rem;
                 }
             }
         }
@@ -94,7 +95,7 @@ html {
     }
 }
 .user-qa {
-    margin-bottom: 50px;
+    margin-bottom: 42px;
     font-size: 0.7rem;
     .user-q {
         .username {
@@ -104,6 +105,7 @@ html {
             position: relative;
             .username-word {
                 display: inline-block;
+                 _zoom:1;_display:inline;
                 position: absolute;
                 height: 0.8rem;
                 top: 50%;
@@ -125,7 +127,6 @@ html {
                 background: #ff992b;
                 color: #fff;
                 margin-left: 5px;
-                line-height: 1;
                 padding: 1px 3px;
             }
             .date {
@@ -169,6 +170,7 @@ html {
 .page-link a {
     text-decoration: none;
     display: inline-block;
+     _zoom:1;_display:inline;
     width: 2rem;
     height: 2rem;
     border: 1px solid #efefef;
@@ -212,11 +214,14 @@ html {
     color: #fff;
     margin: 20px auto;
 }
-.pull-wrap{
+.pull-wrap {
     display: none;
 }
 @media screen and (max-width: 768px) {
     .onlyPC {
+        display: none;
+    }
+    .wrapper .consult-content .consult-pic .pic-wrapper .onlyPC {
         display: none;
     }
     .consult-pic .pic-wrapper {
@@ -226,20 +231,20 @@ html {
     .consult-pic .pic-wrapper .cons-way-m {
         display: block;
         height: 40px;
-        margin:30px 0;
+        margin: 30px 0;
         color: #74cd55;
         text-align: center;
-        border-right:1px solid #f4f4f4;
+        border-right: 1px solid #f4f4f4;
         .icon-wrap {
             text-align: center;
         }
     }
-    .consult-pic .pic-wrapper .last-cons-way-m{
+    .consult-pic .pic-wrapper .last-cons-way-m {
         border-right: none;
     }
-
     .consult-pic .pic-wrapper .iconm {
         display: inline-block;
+         _zoom:1;_display:inline;
     }
     .consult-wrapper {
         width: 95%;
@@ -254,7 +259,7 @@ html {
     .wrapper .consult-content {
         width: 100%;
     }
-    .user-qa{
+    .user-qa {
         margin-bottom: 10px;
     }
     .user-qa .user-q .username, .user-qa .user-q .user-question {
@@ -276,13 +281,7 @@ html {
         box-sizing: border-box;
         padding: 10px;
     }
-    .consult-content .more {
-        display: block;
-        font-size: 0.6rem;
-        color: #999;
-        height:50px;
-        line-height: 50px;
-    }
+    
     .user-qa .hj-answer .arrow {
         top: -10px;
         border-top: 5px solid #fff;
@@ -294,13 +293,17 @@ html {
         display: inline;
         padding: 0;
     }
-    .pull-wrap{
+    .pull-wrap {
         display: block;
         background: #f0eff4;
-    .pull{
-        width:91px;
-        margin: 0 auto;
+        text-align: center;
+        font-size: 0.6rem;
+        color: #999;
+        height: 50px;
+        line-height: 50px;
+        margin-top: 28px;
     }
-        
+    .cons-title {
+        margin: 15px 0 16px !important;
     }
 }

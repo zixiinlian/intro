@@ -45,7 +45,7 @@ html {
 }
 
 .schedule-title .title-header {
-  border-left: 10px solid #74cd55;
+  border-left: 4px solid #74cd55;
   padding-left: 10px;
 }
 
@@ -68,6 +68,8 @@ html {
   height: 25px;
   border-radius: 50%;
   display: inline-block;
+  _zoom: 1;
+  _display: inline;
   border: 2px solid #ccc;
   margin-left: 70px;
   margin-right: 9px;
@@ -85,6 +87,8 @@ html {
   width: 100px;
   height: 32px;
   display: inline-block;
+  _zoom: 1;
+  _display: inline;
   background: #c0c0c0;
   vertical-align: 0;
   line-height: 32px;
@@ -107,6 +111,8 @@ html {
   margin-left: -30px;
   z-index: 33;
   display: inline-block;
+  _zoom: 1;
+  _display: inline;
   font-weight: normal;
   vertical-align: 0;
 }

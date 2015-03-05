@@ -26,7 +26,7 @@ html {
   width: 90%;
   margin: 0 auto;
   font-family: "Microsoft Yahei";
-  font-size: 0.8rem;
+  font-size: 16px;
 }
 
 .online {
@@ -67,9 +67,10 @@ html {
   width: 25px;
   height: 25px;
   border-radius: 50%;
+  behavior: url(/src/pie/PIE.htc);
   display: inline-block;
-  _zoom: 1;
-  _display: inline;
+  zoom: 1;
+  *display: inline;
   border: 2px solid #ccc;
   margin-left: 70px;
   margin-right: 9px;
@@ -87,12 +88,13 @@ html {
   width: 100px;
   height: 32px;
   display: inline-block;
-  _zoom: 1;
-  _display: inline;
+  zoom: 1;
+  *display: inline;
   background: #c0c0c0;
   vertical-align: 0;
   line-height: 32px;
   border-radius: 18px;
+  behavior: url(/src/pie/PIE.htc);
   color: #fff;
 }
 .schedule-list .item .unit .unit-title {
@@ -103,6 +105,7 @@ html {
   height: 30px;
   background-color: #fff;
   border-radius: 50%;
+  behavior: url(/src/pie/PIE.htc);
   border: 5px solid #8CD373;
   line-height: 30px;
   color: #8CD373;
@@ -111,13 +114,11 @@ html {
   margin-left: -30px;
   z-index: 33;
   display: inline-block;
-  _zoom: 1;
-  _display: inline;
+  zoom: 1;
+  *display: inline;
   font-weight: normal;
   vertical-align: 0;
-}
-.schedule-list .item .circle0 {
-  vertical-align: -2px;
+  *vertical-align: -5px;
 }
 .schedule-list .item .title {
   padding-left: 4px;

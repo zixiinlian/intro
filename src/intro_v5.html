@@ -7,7 +7,9 @@
 	<link rel="stylesheet" href="http://class2.hujiang.com/app/css/base-font-reset.css">
 	<link rel="stylesheet" href="/build/css/intro_v5.css">
 	<link rel="stylesheet" href="/build/css/font-icons.css">
+	<link rel="stylesheet" href="/build/css/jquery.bxslider.css"/>
 	<link rel="stylesheet" media="screen and (max-width: 320px)" href="/build/css/intro_v5_320.css">
+	<script src="/src/js/jquery-1.8.3.js"></script>
 </head>
 <body>
 	<div class="intro-header">
@@ -64,6 +66,23 @@
 	</div>
 	<div class="wrapper">
 		<div class="main clearfix">
+			<div class="intro-siderbar">
+				<div class="siderbar-nav">
+					<a href=""><i class="icon-dot active"></i>课程简介</a>
+					<a href=""><i class="icon-dot"></i>适合对象</a>
+					<a href=""><i class="icon-dot"></i>学习目标</a>
+					<a href=""><i class="icon-dot"></i>课程安排</a>
+					<a href=""><i class="icon-dot"></i>师资介绍</a>
+					<a href=""><i class="icon-dot"></i>使用教材</a>
+					<a href=""><i class="icon-dot"></i>学员风采</a>
+					<a href=""><i class="icon-dot"></i>学员心声</a>
+					<a href=""><i class="icon-dot"></i>课程咨询</a>
+				</div>
+				<a href="" class="link-consult">
+					<i class="icon-consult"></i><br />
+					在线咨询
+				</a>
+			</div>
 			<!--课程简介-->
 			<div class="intro-panel">
 				<div class="panel-title">课程简介</div>
@@ -152,6 +171,16 @@
 			<div class="intro-panel">
 				<div class="panel-title">师资介绍</div>
 				<div class="panel-con">
+					<ul class="bxslider">
+					  <li><img src="http://bxslider.com//images/170_200/trees.jpg" /></li>
+					  <li><img src="http://bxslider.com//images/170_200/tree_root.jpg" /></li>
+					  <li><img src="http://bxslider.com//images/170_200/houses.jpg" /></li>
+					  <li><img src="http://bxslider.com//images/170_200/hill_road.jpg" /></li>
+					  <li><img src="http://bxslider.com//images/170_200/me_trees.jpg" /></li>
+					  <li><img src="http://bxslider.com//images/170_200/hill_trees.jpg" /></li>
+					  <li><img src="http://bxslider.com//images/170_200/mountain.jpg" /></li>
+					  <li><img src="http://bxslider.com//images/170_200/houses.jpg" /></li>
+					</ul>
 				</div>	
 			</div>
 			<!--使用教材-->
@@ -191,5 +220,7 @@
 			</div>
 		</div>
 	</div>
+	<script src="/src/js/jquery.bxslider.min.js"></script>
+	<script src="/src/js/intro_v5.js"></script>
 </body>
 </html>

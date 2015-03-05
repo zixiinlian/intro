@@ -3,3 +3,12 @@
 .icon-clock{
     @include iconSprite(clock);
 }
+.icon-dot{
+    @include iconSprite(dot);
+}
+.icon-dot.active{
+    @include iconSprite(dot-active);  
+}
+.icon-consult{
+    @include iconSprite(consult);
+}

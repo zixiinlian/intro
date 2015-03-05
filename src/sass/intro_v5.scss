@@ -1,4 +1,4 @@
-@import "icon","consult","consult-icon";
+@import "icon";
 
 $gray: #898989;
 $greenHover: #5fb740;
@@ -235,5 +235,36 @@ body{
     }
     .material-list{
         float: left;
+    }
+}
+
+.intro-siderbar{
+    position: absolute;
+    top: 10px;
+    right: 0;
+    width: 159px;
+    border-right:1px solid #edf2ec;
+    background: #fafcf7;
+    .siderbar-nav{
+        padding: 10px 0;
+        a{
+            display: block;
+            height: 35px;
+            line-height: 35px;
+            padding: 0 30px;
+            font-size: 14px;
+            font-family: "microsoft yahei";
+        }
+    }
+    .link-consult{
+        display: block;
+        text-align: center;
+        color: #74CD55;
+        font-size: 14px;
+        line-height: 11px;
+        background: #E7FFDF;
+        height: 74px;
+        font-family: "microsoft yahei";
+        padding: 5px 0;
     }
 }

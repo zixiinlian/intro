@@ -1,19 +1,20 @@
 @font-face {
   font-family: 'hjIconFont';
-  src: url('/src/font/hj.eot');
-  src: url('/src/font/hj.eot?#iefix') format('embedded-opentype'), 
-  url('/src/font/hj.woff') format('woff'), 
-  url('/src/font/hj.ttf') format('truetype'), 
-  url('/src/font/hj.svg') format('svg');
+  src: url('/src/font/fontello.eot');
+  src: url('/src/font/fontello.eot?#iefix') format('embedded-opentype'), 
+  url('/src/font/fontello.woff') format('woff'), 
+  url('/src/font/fontello.ttf') format('truetype'), 
+  url('/src/font/fontello.svg') format('svg');
   font-weight: normal;
   font-style: normal;
 }
+
 
 .font-icons{
     font-family: "hjIconFont";
     font-size: 5em;
     font-weight: 100;
     color: #090;
-}
+} 
 
-.icon-clock:before{ content: "\f0000";}
+.icon-clock:before{ content: "\e800";}

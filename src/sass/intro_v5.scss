@@ -14,12 +14,28 @@ a:hover{color: #f60; }
 .gray {color: $gray; }
 .green{color: $green;}
 .orange{color: $orange;}
+a.btnGreen-s{
+    display: inline-block;
+    padding:2px 10px;
+    color: #fff;
+    background: $green;
+    line-height: 18px;
+    font-size: 14px;
+    border-radius: 2px;
+    position: relative;
+    font-family: 'microsoft yahei';
+    behavior: url(/src/pie/PIE.htc);
+}
+.btnGreen-s:hover{
+   background: $greenHover;
+}
 a.btnGreen{
     display: inline-block;
     padding:2px 10px;
     color: #fff;
     background: $green;
     line-height: 18px;
+    font-size: 14px;
     border-radius: 2px;
     position: relative;
     font-family: 'microsoft yahei';
@@ -41,19 +57,27 @@ body{
     width: 1000px;
     margin: 0 auto; 
     padding-right: 200px;  
+    position: relative;
 }
 .intro-header{
 	padding: 20px 0;
 	position: relative;
 	.intro-info{
-		width:1160px;
-		margin: 0 auto;
-		padding: 15px 20px;	
+		width: 1130px;
+        margin: 0 auto;
+        padding: 15px 35px;
 		background: #fff;
 		position:relative;
 	}
+	.page-breadcrumb, .page-breadcrumb a{
+	    color: #999;
+	}
 	.header-bg{
 		-webkit-filter: blur(60px);
+		-moz-filter: blur(60px);
+		-ms-filter: blur(60px);
+		filter: blur(60px);
+		filter: progid:DXImageTransform.Microsoft.Blur(PixelRadius=10, MakeShadow=false);
 		position: absolute;
 		width: 100%;
 		background-size: cover;
@@ -66,9 +90,14 @@ body{
 	.intro-title{
 		font-family:'microsoft yahei';
 		font-size: 24px;
+		margin: 10px 0;
+		font-weight: 300;
 	}
 	.intro-desc{
 		color: #999;
+		margin-bottom: 10px;
+		font-size: 14px;
+		font-family: 'microsoft yahei';
 	}
 	.intro-info-l{
 		width:50%;
@@ -78,21 +107,171 @@ body{
 		    margin: 10px 0 0 0;
 		    font-family: 'microsoft yahei';
 		    font-size: 14px;
+		    .split{
+		        color: #dbdcdc;
+                margin: 0 15px;
+		    }
+		}
+		.intro-cover{
+		    position: relative;
+		    display: block;
+		    .icon-btnstart{
+		        display: block;
+		        width: 96px;
+		        height: 96px;
+		        background:url(/src/images/btnstart.png) no-repeat ;
+		        position: absolute;
+		        top: 50%;
+		        margin-top: -48px;
+		        left: 50%;
+		        margin-left: -48px;
+		    }
+		    &:hover .icon-btnstart{
+		        background-position: -104px 0;
+		    }
+		}
+		.favorite-span{
+		    background: rgba(0, 0, 0, 0.16);
+            border-radius: 4px;
+            padding: 4px 10px;
+            display: block;
+            font-family: 'microsoft yahei';
+            position: absolute;
+            bottom: 10px;
+            right: 10px;
+            color: #FFF;
+		}
+		.favorite-num{
+		    font-size: 20px;
+		    vertical-align: -3px;
+		    margin-right: 2px;
 		}
 	}
 	.intro-info-r{
 		width: 50%;
 		float:left;
+		font-family: 'microsoft yahei';
 		.intro-price{
 			border-bottom:1px solid #fafafa;
 		}
+		.intro-info-box{
+		    padding: 0 10px 0 30px;
+		}
+		.intro-info-t{
+		    border-bottom: 1px solid #e9eae9;
+		    padding-bottom: 20px;
+		    margin-bottom: 20px;
+		    margin-top: -16px;
+		    font-size: 14px;
+		}
+		.class-price-unit{
+		    color: $orange;
+		    font-size: 24px;
+		}
+		.class-price{
+		    color: $orange;
+		    font-size: 48px;
+		}
+		.time-num{
+		    color: $orange;
+		    font-size: 20px;
+		}
+	}
+	.class-info-dl{
+	    font-family: 'microsoft yahei';
+	    float: left;
+	    margin-bottom: 24px;
+	    font-size: 14px;
+	    width: 100%;
+	    dt{
+	        color: #999;
+	        margin-bottom: 15px;
+	    }
+	    .split{
+	        color: #dbdcdc;
+	        margin: 0 10px;
+	    }
+	}
+	.btn-more-role{
+	    display: inline-block;
+        padding: 1px 8px;
+        background: #ECECEC;
+        border-radius: 2px;
+        color: #999;
+        margin-left: 10px;
+        font-size: 12px;
+	}
+	.btn-more-role:hover{
+	    color:#fff;
+	    background: #d2d2d2;
+	}
+	.btnBuy{
+	    display: inline-block;
+        color: #fff;
+        background: #f60;
+        line-height: 49px;
+        font-size: 22px;
+        width: 230px;
+        height: 50px;
+        border-radius: 3px;
+        text-align: center;
+        position: relative;
+        font-family: 'microsoft yahei';
+        behavior: url(/src/pie/PIE.htc);
+        vertical-align: middle;
+	}
+	.btnBuy:hover{
+	    background: #da5700;
+	}
+	.btnOther{
+	    display: inline-block;
+        border: 1px solid #e0e1e1;
+        line-height: 49px;
+        font-size: 14px;
+        width: 134px;
+        height: 48px;
+        text-align: center;
+        border-radius: 3px;
+        background: url(/src/images/btnSplit.png) center no-repeat;
+        position: relative;
+        font-family: 'microsoft yahei';
+        behavior: url(/src/pie/PIE.htc);
+        vertical-align: middle;
+        margin-left: 10px;
+        a{
+            display: block;
+            height: 100%;
+            width: 50%;
+            color: #898989;
+            float: left;
+        }
+        a:hover{
+            color: #f60;
+        }
+	}
+	.feture-item{
+	    width: 33.3%;
+	    display: block;
+        float: left;
+        margin: 5px 0;
 	}
 }
 .intro-nav{
+    height: 53px;
+    z-index: 999999;
+}
+.intro-nav-main{
 	height: 52px;
 	position: relative;
 	border-bottom: 1px solid #e8e8e8;
-	background: #fff;
+	background: #f5f5f5;
+	width: 100%;
+	&.fixed{
+	    position: fixed;
+	    top: 0;
+	    left: 0;
+	    z-index: 99;
+	}
 	.intro-nav-con{
 		width: 1200px;
 		margin: 0 auto;
@@ -106,15 +285,23 @@ body{
 		font-size: 18px;
 		text-align: center;
 		float: left;
-		&.cur{
-			background: #74cd55;
+		color: #000;
+		background: url(/src/images/navSplit.png) no-repeat 0 center;
+		&.cur,&.cur:hover{
+			background: url(/src/images/nav-cur.png) no-repeat center 45px #74cd55;
 			color: #fff;
+            height: 53px;
+		}
+		&:hover{
+		    background: $green;
+		    color: #fff;
 		}
 	}
 }
 .intro-panel{
-    padding-top: 30px;
+    padding-top: 45px;
     float: left;
+    width: 100%;
     .panel-title{
         border-left: 8px solid #74CD55;
         font-size: 20px;
@@ -122,21 +309,25 @@ body{
         color: $green;
         padding-left: 10px;
         line-height: 24px;
-        margin-bottom:20px;
+        margin-bottom:25px;
     }
     .panel-con{
+        position: relative;
         font-size: 14px;
         font-family: 'microsoft yahei';
-        line-height:26px;
+        line-height:24px;
     }
 }
 
 .intro-role-panel{
     .roles-img{
         float: left;
+        margin-top: 8px;
     }
     .roles-detail{
         padding-left: 100px;
+        line-height: 31px;
+        color: #999;
     }
     .icon-class-roles{
         display: block;
@@ -229,22 +420,31 @@ body{
     .material-covers{
         float: left;
         margin-right: 10px;
+        max-width: 340px;
         img{
             margin-right: 15px;
         }
     }
     .material-list{
         float: left;
+        line-height: 37px;
+        margin-top: -10px;
     }
 }
 
 .intro-siderbar{
     position: absolute;
     top: 10px;
-    right: 0;
+    right: 50%;
+    margin-right: -600px;
     width: 159px;
     border-right:1px solid #edf2ec;
     background: #fafcf7;
+    z-index: 999999;
+    &.fixed{
+        position: fixed;
+        top: 63px;
+    }
     .siderbar-nav{
         padding: 10px 0;
         a{
@@ -255,6 +455,10 @@ body{
             font-size: 14px;
             font-family: "microsoft yahei";
         }
+        a:hover{
+            background: #74cd55;
+            color: #fff;
+        }
     }
     .link-consult{
         display: block;
@@ -262,9 +466,137 @@ body{
         color: #74CD55;
         font-size: 14px;
         line-height: 11px;
-        background: #E7FFDF;
+        background: #E7FFDF; 
         height: 74px;
         font-family: "microsoft yahei";
         padding: 5px 0;
     }
+}
+.teacher-panel{
+    .panel-con{
+        padding: 0 0 20px 0;
+    }
+    .bx-wrapper{
+        padding: 0 85px;
+    }
+    .teacher-headimg{
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 22px;
+        color: #333;
+        img{
+            width: 74px;
+            height: 74px;
+            border-radius: 80px;
+            display: block;
+            margin: 0 auto 10px;
+            border: 3px solid #f0f0f0;
+        }
+    }
+    .teacher-info{
+        text-align: justify;
+        margin-top: 10px;
+        font-size: 12px;
+    }
+    .bx-wrapper li{
+        background: url(/src/images/splitLine.png) no-repeat;
+        padding: 0 28px;
+    }
+    .sliderMask{
+        height: 110px;
+        background: #fff;
+        position: absolute;
+        top: 0;
+        left: 83px;
+        width: 35px;
+        z-index: 2;
+    }
+}
+.students-panel{
+    .students-feed li{
+        width: 48%;
+        float: left;
+        margin-bottom: 20px;
+    }
+    .feed-headimg{
+        position: absolute;
+        text-align: center;
+        font-size: 12px;
+        img{
+            width: 58px;
+            height: 58px;
+            border-radius: 58px;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+    .feed-arrow{
+        background: url(/src/images/dialog-arrow.png) no-repeat;
+        position: absolute;
+        top: 20px;
+        left: -9px;
+        width: 10px;
+        height: 18px;
+        display: block;
+    }
+    .feed-box{
+        padding-left: 64px;
+    }
+    .feed-con{
+        min-height: 75px;
+        margin-left: 10px;
+        background: #f8f8f8;
+        border-bottom: 2px solid #d9d9d9;
+        padding: 10px 10px 20px 10px;
+        border-radius: 3px;
+        position: relative;
+    }
+    .feed-time{
+        position: absolute;
+        bottom: 5px;
+        right: 10px;
+        font-size: 12px;
+        color: $gray;
+    }
+}
+.relate-panel{
+    .relate-class-title{
+        font-size: 12px;
+        height: 40px;
+        overflow: hidden;
+        display: block;
+        margin-top: 7px;
+        line-height: 18px;
+    }
+    .relate-class-price{
+        color: $orange;
+    }
+    .btnGreen-s{
+        font-size: 12px;
+    }
+    .bx-wrapper{
+        padding: 0 100px;
+    }
+}
+.bx-wrapper .bx-controls-direction a {
+    position: absolute;
+    top: 80px;
+    outline: 0;
+    width: 56px;
+    height: 56px;
+    border-radius: 56px;
+    text-indent: -9999px;
+    z-index: 9999;
+}
+.bx-wrapper .bx-prev:hover,.bx-wrapper .bx-next:hover {
+    background-color: #f7f6f6;
+}
+.bx-wrapper .bx-prev {
+    left: 10px;
+    @include iconSprite(arrow-l);
+}
+.bx-wrapper .bx-next {
+    right: 10px;
+    @include iconSprite(arrow-r);
 }

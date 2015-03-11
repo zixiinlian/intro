@@ -6,9 +6,30 @@
 .icon-dot{
     @include iconSprite(dot);
 }
+a:hover .icon-dot{
+    @include iconSprite(dot-hover);  
+}
 .icon-dot.active{
     @include iconSprite(dot-active);  
 }
 .icon-consult{
-    @include iconSprite(consult);
+    @include iconSprite(consult); 
+}
+.icon-personal{
+    @include iconSprite(personal); 
+}
+.icon-speak{
+    @include iconSprite(speak); 
+}
+.icon-test{
+    @include iconSprite(test); 
+}
+.icon-heart{
+    @include iconSprite(heart); 
+}
+.icon-cash{
+    @include iconSprite(cash); 
+}
+.icon-talk{
+    @include iconSprite(talk); 
 }

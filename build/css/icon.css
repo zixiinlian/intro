@@ -1,10 +1,91 @@
-.icon-sprite, .icon-clock {
-  background-image: url('/src/images/icon-sa330ba415c.png');
-  background-repeat: no-repeat;
+.icon-sprite, .icon-clock, .icon-dot, a:hover .icon-dot, .icon-dot.active, .icon-consult, .icon-personal, .icon-speak, .icon-test, .icon-heart, .icon-cash, .icon-talk {
+  background: url('/src/images/icon-s7ba0d0c592.png') no-repeat;
 }
 
 .icon-clock {
+  display: inline-block;
+  vertical-align: middle;
   width: 25px;
   height: 25px;
-  background-position: 0 -49px;
+  background-position: 0 -487px;
+}
+
+.icon-dot {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  background-position: 0 -647px;
+}
+
+a:hover .icon-dot {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  background-position: 0 -567px;
+}
+
+.icon-dot.active {
+  display: inline-block;
+  vertical-align: middle;
+  width: 30px;
+  height: 30px;
+  background-position: 0 -407px;
+}
+
+.icon-consult {
+  display: inline-block;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  background-position: 0 -184px;
+}
+
+.icon-personal {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  background-position: 0 -597px;
+}
+
+.icon-speak {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  background-position: 0 -718px;
+}
+
+.icon-test {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  background-position: 0 -693px;
+}
+
+.icon-heart {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  background-position: 0 -622px;
+}
+
+.icon-cash {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  background-position: 0 -760px;
+}
+
+.icon-talk {
+  display: inline-block;
+  vertical-align: middle;
+  width: 25px;
+  height: 25px;
+  background-position: 0 -512px;
 }
